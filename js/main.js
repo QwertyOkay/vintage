@@ -43,21 +43,20 @@ $(document).ready(function(){
   });
 });
 
-// (() => {
-//     const refs = {
-//       openModalBtn6: document.querySelector('[data-modal-open6]'),
-//       closeModalBtn6: document.querySelector('[data-modal-close6]'),
+ (() => {
+     const refs = {
+       openModalBtn: document.querySelector('[data-modal-open]'),
+       closeModalBtn: document.querySelector('[data-modal-close]'),
 
-//       modal6: document.querySelector('[data-modal6]'),
-//       };
+       modal: document.querySelector('[data-modal]'),
+       };
   
-//     refs.openModalBtn6.addEventListener('click', toggleModal6);
-//     refs.closeModalBtn6.addEventListener('click', toggleModal6);
-      
-//     function toggleModal6() {
-//     refs.modal6.classList.toggle('is-hidden6');
-//     }
+     refs.openModalBtn.addEventListener('click', toggleModal);
+     refs.closeModalBtn.addEventListener('click', toggleModal);
+        function toggleModal() {
+     refs.modal.classList.toggle('is-hidden');
+     }
     
-//     })();
+     })();
 
 

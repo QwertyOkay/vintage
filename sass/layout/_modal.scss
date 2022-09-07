@@ -1,0 +1,68 @@
+.modal__backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    height: 100%;
+    width: 100%;
+    transition-property: opacity, visibility;
+    background-color: rgba(0, 0, 0, 0.62);
+    opacity: 1;
+    visibility: visible;
+}
+.modal__backdrop.is-hidden {
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+}
+.modal__backdrop.is-hidden>.modal {
+    transform: translate(-50%, -50%) scale(2.9);
+    opacity: 0;
+}
+
+
+.modal__close {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color:#131920;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 17px;
+    margin-bottom: 17px;
+} 
+
+.is-hidden {
+    display: none;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%) scale(1);
+    width: 90%;
+    height: auto;
+    padding: 15px 15px 15px 15px;
+    background-color: #eeeeee;
+    opacity: 1;
+    border-radius: 6px;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition-property: opacity, transform;
+
+    @media screen and (min-width: 480px) {
+        width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
+}
+
+.modal__hero-text {
+    color: #000;
+    font-weight: 600;
+}
