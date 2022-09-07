@@ -21,15 +21,11 @@ Use a better box model (opinionated).
 3. Use a more readable tab size (opinionated).
 */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-  -moz-tab-size: 4;
-  /* 3 */
-  tab-size: 4;
-  /* 3 */
-  font-family: 'Raleway';
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  tab-size: 4; /* 3 */
+  font-family: "Raleway";
 }
 
 /*
@@ -49,10 +45,8 @@ Grouping content
 2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
 */
 hr {
-  height: 0;
-  /* 1 */
-  color: inherit;
-  /* 2 */
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
 }
 
 /*
@@ -82,9 +76,8 @@ code,
 kbd,
 samp,
 pre {
-  font-family: 'Raleway';
-  font-size: 1em;
-  /* 2 */
+  font-family: "Raleway";
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -122,10 +115,8 @@ Tabular data
 2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
 */
 table {
-  text-indent: 0;
-  /* 1 */
-  border-color: inherit;
-  /* 2 */
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
 }
 
 /*
@@ -141,14 +132,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -163,9 +150,9 @@ select {
 Correct the inability to style clickable types in iOS and Safari.
 */
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -218,11 +205,9 @@ Correct the cursor style of increment and decrement buttons in Safari.
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
-[type='search'] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -237,10 +222,8 @@ Remove the inner padding in Chrome and Safari on macOS.
 2. Change font properties to 'inherit' in Safari.
 */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /*
@@ -259,8 +242,7 @@ summary {
 }
 
 .sub-menu {
-  visibility: hidden;
-  /* hides sub-menu */
+  visibility: hidden; /* hides sub-menu */
   opacity: 0;
   position: absolute;
   top: 100%;
@@ -274,13 +256,11 @@ summary {
 .sub-menu-parent:focus .sub-menu,
 .sub-menu-parent:focus-within .sub-menu,
 .sub-menu-parent:hover .sub-menu {
-  visibility: visible;
-  /* shows sub-menu */
+  visibility: visible; /* shows sub-menu */
   opacity: 1;
   z-index: 1;
   transform: translateY(0%);
-  transition-delay: 0s, 0s, 0.3s;
-  /* this removes the transition delay so the menu will be visible while the other styles transition */
+  transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
 }
 
 /* presentational */
@@ -290,10 +270,12 @@ body {
 }
 
 nav a {
-  color: #E00;
+  color: #334155;
   display: block;
   padding: 0.5em 1em;
   text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 nav a:hover {
@@ -329,10 +311,14 @@ nav > ul > li:first-child {
   height: 232px;
 }
 
+/* .bg-img {
+  background-image: url(../../img/bg.jpg);
+  background-size: cover;
+} */
 body {
   background: #dce1df;
   color: #4f585e;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   text-rendering: optimizeLegibility;
 }
 
@@ -370,7 +356,7 @@ div.cards {
 }
 
 div.card {
-  background: #ffffff;
+  background: #eeeeee;
   display: inline-block;
   margin: 8px;
   max-width: 300px;
@@ -381,24 +367,20 @@ div.card {
   width: 300px;
   z-index: 1;
 }
-
 div.card img {
   max-width: 300px;
 }
-
 div.card .card__image-holder {
   background: rgba(0, 0, 0, 0.1);
   height: 0;
   padding-bottom: 75%;
 }
-
 div.card div.card-title {
-  background: #ffffff;
+  background: #eeeeee;
   padding: 6px 15px 10px;
   position: relative;
   z-index: 0;
 }
-
 div.card div.card-title a.toggle-info {
   border-radius: 32px;
   height: 32px;
@@ -408,7 +390,6 @@ div.card div.card-title a.toggle-info {
   top: 10px;
   width: 32px;
 }
-
 div.card div.card-title a.toggle-info span {
   background: #ffffff;
   display: block;
@@ -418,17 +399,14 @@ div.card div.card-title a.toggle-info span {
   transition: all 0.15s 0s ease-out;
   width: 12px;
 }
-
 div.card div.card-title a.toggle-info span.left {
   right: 14px;
   transform: rotate(45deg);
 }
-
 div.card div.card-title a.toggle-info span.right {
   left: 14px;
   transform: rotate(-45deg);
 }
-
 div.card div.card-title h2 {
   font-size: 24px;
   font-weight: 700;
@@ -436,26 +414,22 @@ div.card div.card-title h2 {
   margin: 0;
   padding: 0;
 }
-
 div.card div.card-title h2 small {
   display: block;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: -0.025em;
 }
-
 div.card div.card-description {
   padding: 0 15px 10px;
   position: relative;
   font-size: 14px;
 }
-
 div.card div.card-actions {
   box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075);
   padding: 10px 15px 20px;
   text-align: center;
 }
-
 div.card div.card-flap {
   background: #d9d9d9;
   position: absolute;
@@ -463,12 +437,10 @@ div.card div.card-flap {
   transform-origin: top;
   transform: rotateX(-90deg);
 }
-
 div.card div.flap1 {
   transition: all 0.3s 0.3s ease-out;
   z-index: -1;
 }
-
 div.card div.flap2 {
   transition: all 0.3s 0s ease-out;
   z-index: -2;
@@ -489,33 +461,25 @@ div.card.show {
   opacity: 1 !important;
   transform: scale(1) !important;
 }
-
 div.card.show div.card-title a.toggle-info {
   background: #ff6666 !important;
 }
-
 div.card.show div.card-title a.toggle-info span {
   top: 15px;
 }
-
 div.card.show div.card-title a.toggle-info span.left {
   right: 10px;
 }
-
 div.card.show div.card-title a.toggle-info span.right {
   left: 10px;
 }
-
 div.card.show div.card-flap {
   background: #ffffff;
   transform: rotateX(0deg);
 }
-
 div.card.show div.flap1 {
   transition: all 0.3s 0s ease-out;
 }
-
 div.card.show div.flap2 {
   transition: all 0.3s 0.2s ease-out;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

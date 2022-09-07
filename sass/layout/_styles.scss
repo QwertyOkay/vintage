@@ -27,7 +27,14 @@
 /* presentational */
 body { padding: 2%; font: 18px/1.4 sans-serif; }
 
-nav a { color: #E00; display: block; padding: 0.5em 1em; text-decoration: none; }
+nav a { 
+color: #334155; 
+display: block; 
+padding: 0.5em 1em; 
+text-decoration: none; 
+font-size: 1rem;
+font-weight: 600; }
+
 nav a:hover { color: #F55; }
 nav ul,
 nav ul li { list-style-type: none; padding: 0; margin: 0; }
@@ -43,3 +50,8 @@ nav > ul > li:first-child { border-left: none; }
 .img-h {
     height: 232px;
 }
+
+/* .bg-img {
+  background-image: url(../../img/bg.jpg);
+  background-size: cover;
+} */
