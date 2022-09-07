@@ -1,5 +1,5 @@
 // font stuff
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,600,700,900);
 
 
 // colour stuff
@@ -17,7 +17,7 @@ $darkGrey: #4f585e;
 body {
   background: $lightBG;
   color: $darkGrey;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-rendering: optimizeLegibility;
 }
 
@@ -38,6 +38,7 @@ a.btn {
   box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
   transform: translateY(-2px);
   transition: all 0.25s 0s ease-out;
+  cursor: pointer;
 }
 
 .no-touch a.btn:active,
@@ -171,6 +172,7 @@ div.cards.showing {
   div.card:hover {
     opacity: 0.94;
     transform: scale(0.92);
+    cursor: pointer;
   }
 }
 
