@@ -279,7 +279,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #F55;
+  color: #FFF;
 }
 
 nav ul,
@@ -323,7 +323,7 @@ body {
 }
 
 a.btn {
-  background: #0096a0;
+  background: #334155;
   border-radius: 4px;
   box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
   color: #ffffff;
@@ -335,7 +335,7 @@ a.btn {
 }
 
 .no-touch a.btn:hover {
-  background: #00a2ad;
+  background: #38475d;
   box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
   transform: translateY(-2px);
   transition: all 0.25s 0s ease-out;
@@ -343,7 +343,7 @@ a.btn {
 
 .no-touch a.btn:active,
 a.btn:active {
-  background: #008a93;
+  background: #2e3b4d;
   box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.25);
   transform: translate3d(0, 1px, 0);
   transition: all 0.025s 0s ease-out;
@@ -408,7 +408,7 @@ div.card div.card-title a.toggle-info span.right {
   transform: rotate(-45deg);
 }
 div.card div.card-title h2 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: -0.05em;
   margin: 0;
@@ -424,14 +424,16 @@ div.card div.card-description {
   padding: 0 15px 10px;
   position: relative;
   font-size: 14px;
+  background-color: #eeeeee;
 }
 div.card div.card-actions {
   box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075);
   padding: 10px 15px 20px;
   text-align: center;
+  background-color: #eeeeee;
 }
 div.card div.card-flap {
-  background: #d9d9d9;
+  background: #c8c8c8;
   position: absolute;
   width: 100%;
   transform-origin: top;

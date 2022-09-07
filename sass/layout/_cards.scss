@@ -22,7 +22,7 @@ body {
 }
 
 a.btn {
-  background: $teal;
+  background: #334155;
   border-radius: 4px;
 	box-shadow: 0 2px 0px 0 rgba(0,0,0,0.25);
   color: $white;
@@ -34,7 +34,7 @@ a.btn {
 }
 
 .no-touch a.btn:hover {
-  background: lighten($teal,2.5);
+  background: lighten(#334155,2.5);
   box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
   transform: translateY(-2px);
   transition: all 0.25s 0s ease-out;
@@ -42,7 +42,7 @@ a.btn {
 
 .no-touch a.btn:active,
 a.btn:active {
-  background: darken($teal,2.5);
+  background: darken(#334155,2.5);
   box-shadow: 0 1px 0px 0 rgba(255,255,255,0.25);
   transform: translate3d(0,1px,0);
   transition: all 0.025s 0s ease-out;
@@ -112,7 +112,7 @@ div.card {
     }
     
     h2 {
-      font-size: 24px;
+      font-size: 20px;
       font-weight: 700;
       letter-spacing: -0.05em;
       margin: 0;
@@ -131,16 +131,18 @@ div.card {
     padding: 0 15px 10px;
     position: relative;
     font-size: 14px;
+    background-color: #eeeeee;
   }
 
   div.card-actions {
   	box-shadow: 0 2px 0px 0 rgba(0,0,0,0.075);
     padding: 10px 15px 20px;
     text-align: center;
+    background-color: #eeeeee;
   }
   
   div.card-flap {
-    background: darken($white,15);
+    background: darken(#eeeeee,15);
     position: absolute;
     width: 100%;
     transform-origin: top;
