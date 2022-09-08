@@ -272,7 +272,7 @@ nav a {
   color: #334155;
   display: block;
   padding: 0.5em 1em;
-  text-decoration: none;
+  text-decoration: underline;
   font-size: 1rem;
   font-weight: 600;
 }
@@ -388,6 +388,10 @@ div.card {
   transition: all 0.3s 0s ease-in;
   width: 300px;
   z-index: 1;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
 }
 div.card img {
   max-width: 300px;
