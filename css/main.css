@@ -310,12 +310,10 @@ nav > ul > li:first-child {
   height: 232px;
 }
 
-.bg-img {
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/bg.jpg); */
-  background: linear-gradient(rgba(255, 255, 255, 0.9215686275), rgb(0, 0, 0)), url(../img/bg.jpg);
+/* .bg-img {
+  background:  linear-gradient(rgb(0 0 0 / 92%), rgb(0, 0, 0)),  url(../img/bg.jpg);
   background-size: cover;
-}
-
+} */
 .marg-h5 {
   margin-bottom: 20px !important;
   margin-top: 20px !important;
@@ -337,6 +335,28 @@ nav > ul > li:first-child {
 
 .bg-color {
   background-color: initial;
+}
+
+.hero-h {
+  height: 13rem;
+}
+@media screen and (min-width: 1200px) {
+  .hero-h {
+    height: 50rem;
+  }
+}
+
+.p-style {
+  position: absolute;
+  font-size: 20px;
+  font-weight: 400;
+  top: 10%;
+  left: 20%;
+}
+@media screen and (min-width: 1200px) {
+  .p-style {
+    font-size: 32px;
+  }
 }
 
 body {
