@@ -400,6 +400,7 @@ div.card .card__image-holder {
   background: rgba(0, 0, 0, 0.1);
   height: 0;
   padding-bottom: 75%;
+  overflow: hidden;
 }
 div.card div.card-title {
   background: #eeeeee;
